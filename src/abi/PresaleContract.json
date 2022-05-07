@@ -19,45 +19,7 @@
                     "type": "address"
                 }
             ],
-            "name": "IsTier1Whitelisted",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_whitelistedAddress",
-                    "type": "address"
-                }
-            ],
-            "name": "IsTier2Whitelisted",
-            "outputs": [
-                {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_whitelistedAddress",
-                    "type": "address"
-                }
-            ],
-            "name": "IsTier3Whitelisted",
+            "name": "IsWhitelisted",
             "outputs": [
                 {
                     "internalType": "bool",
@@ -72,37 +34,11 @@
             "inputs": [
                 {
                     "internalType": "address[]",
-                    "name": "addTier1AddressList",
+                    "name": "addAddressList",
                     "type": "address[]"
                 }
             ],
-            "name": "addMultipleTier1Addresses",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address[]",
-                    "name": "addTier2AddressList",
-                    "type": "address[]"
-                }
-            ],
-            "name": "addMultipleTier2Addresses",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address[]",
-                    "name": "addTier3AddressList",
-                    "type": "address[]"
-                }
-            ],
-            "name": "addMultipleTier3Addresses",
+            "name": "addMultipleAddresses",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -115,33 +51,14 @@
                     "type": "address"
                 }
             ],
-            "name": "addTier1WhitelistAddress",
+            "name": "addwhitelistAddress",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
         },
         {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_address",
-                    "type": "address"
-                }
-            ],
-            "name": "addTier2WhitelistAddress",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_address",
-                    "type": "address"
-                }
-            ],
-            "name": "addTier3WhitelistAddress",
+            "inputs": [],
+            "name": "emergency_withdraw",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -193,124 +110,20 @@
         },
         {
             "inputs": [],
-            "name": "getTier1WhitelistAllocation",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier1WhitelistCount",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier1WhitelistMinAllocation",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier2WhitelistAllocation",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier2WhitelistCount",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier2WhitelistMinAllocation",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier3WhitelistAllocation",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier3WhitelistCount",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "getTier3WhitelistMinAllocation",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
             "name": "getTotalFund",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getWhitelistAllocation",
             "outputs": [
                 {
                     "internalType": "uint256",
@@ -336,19 +149,6 @@
         },
         {
             "inputs": [],
-            "name": "getWithdrawalAddress",
-            "outputs": [
-                {
-                    "internalType": "address",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
             "name": "payWL",
             "outputs": [],
             "stateMutability": "payable",
@@ -362,33 +162,7 @@
                     "type": "address"
                 }
             ],
-            "name": "removeTier1WhitelistAddress",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_address",
-                    "type": "address"
-                }
-            ],
-            "name": "removeTier2WhitelistAddress",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_address",
-                    "type": "address"
-                }
-            ],
-            "name": "removeTier3WhitelistAddress",
+            "name": "removeWhitelistAddress",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -397,97 +171,13 @@
             "inputs": [
                 {
                     "internalType": "uint256",
-                    "name": "_tier1WhitelistAllocation",
+                    "name": "_whitelistAllocation",
                     "type": "uint256"
                 }
             ],
-            "name": "setTier1WhitelistAllocation",
+            "name": "setwhitelistAllocation",
             "outputs": [],
             "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "_tier1WhitelistMinAllocation",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setTier1WhitelistMinAllocation",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "_tier2WhitelistAllocation",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setTier2WhitelistAllocation",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "_tier2WhitelistMinAllocation",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setTier2WhitelistMinAllocation",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "_tier3WhitelistAllocation",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setTier3WhitelistAllocation",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "_tier3WhitelistMinAllocation",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setTier3WhitelistMinAllocation",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "_whitelistedAddress",
-                    "type": "address"
-                }
-            ],
-            "name": "whitelistTier",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
             "type": "function"
         },
         {
