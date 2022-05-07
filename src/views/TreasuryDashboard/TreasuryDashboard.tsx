@@ -42,7 +42,7 @@ const TreasuryDashboard = memo(() => {
             <Box sx={{ mt: "15px" }}>
               <MetricsDashboard />
               <div id="dexscreener-embed" >
-                <iframe src="https://dexscreener.com/avalanche/0x96bfc3ae3f3696392824c5d499a0681ddcafe9fb?embed=1&theme=dark&trades=0&info=0" style={{ position: "relative", width: "100%", height: "60vh", maxHeight: "700px", minWidth: "200px", minHeight: "500px", marginTop: "3vh", borderRadius: "15px" }}>
+                <iframe src="https://dexscreener.com/cronos/0x96bfc3ae3f3696392824c5d499a0681ddcafe9fb?embed=1&theme=dark&trades=0&info=0" style={{ position: "relative", width: "100%", height: "60vh", maxHeight: "700px", minWidth: "200px", minHeight: "500px", marginTop: "3vh", borderRadius: "15px" }}>
                 </iframe>
               </div>
             </Box>

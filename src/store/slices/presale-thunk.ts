@@ -30,7 +30,7 @@ export const payWl = ({ provider, address, networkID }: IPayWl) => {
 
             if (!_amount.gt(new DecimalBigNumber("0", 9))) throw new Error("Please enter a number greater than 0");
 
-            if (!rebaseWl) throw new Error("Please switch to the Avalanche network to fill your whitelist");
+            if (!rebaseWl) throw new Error("Please switch to the Cronos network to fill your whitelist");
 
             if (!address) throw new Error("Please refresh your page and try again");
 

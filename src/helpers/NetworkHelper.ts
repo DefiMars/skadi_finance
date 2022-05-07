@@ -14,13 +14,9 @@ export const initNetworkFunc = async ({ provider }: IGetCurrentNetwork) => {
     let supported = true;
     const id: number = await provider.getNetwork().then(network => network.chainId);
     switch (id) {
-      case 43113:
-        networkName = "Avalanche Fuji Testnet";
-        uri = Providers.getProviderUrl(NetworkId.AVALANCHE_TESTNET);
-        break;
-      case 43114:
-        networkName = "Avalanche";
-        uri = Providers.getProviderUrl(NetworkId.AVALANCHE);
+      case 25:
+        networkName = "Cronos";
+        uri = Providers.getProviderUrl(NetworkId.CRONOS);
         break;
       default:
         supported = false;

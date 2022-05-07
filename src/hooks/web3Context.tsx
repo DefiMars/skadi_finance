@@ -65,7 +65,7 @@ const initModal = new Web3Modal({
             package: WalletConnectProvider,
             options: {
                 rpc: {
-                    43114: NETWORKS[43114].uri(),
+                    25: NETWORKS[25].uri(),
                 },
             },
         },
@@ -84,7 +84,7 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
     const [connectionError, setConnectionError] = useState<IConnectionError | null>(null);
     const [address, setAddress] = useState("");
     // NOTE (appleseed): loading eth mainnet as default rpc provider for a non-connected wallet
-    const [provider, setProvider] = useState<JsonRpcProvider>(Providers.getStaticProvider(NetworkId.AVALANCHE));
+    const [provider, setProvider] = useState<JsonRpcProvider>(Providers.getStaticProvider(NetworkId.CRONOS));
     const [networkId, setNetworkId] = useState(1);
     const [networkName, setNetworkName] = useState("");
     const [providerUri, setProviderUri] = useState("");

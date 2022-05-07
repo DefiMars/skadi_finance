@@ -1,7 +1,7 @@
 const switchRequest = () => {
   return window.ethereum.request({
     method: "wallet_switchEthereumChain",
-    params: [{ chainId: "0xa86a" }],
+    params: [{ chainId: "0x19" }],
   });
 };
 
@@ -10,13 +10,13 @@ const addChainRequest = () => {
     method: "wallet_addEthereumChain",
     params: [
       {
-        chainId: "0xa86a",
-        chainName: "Avalanche Mainnet",
-        rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
-        blockExplorerUrls: ["https://cchain.explorer.avax.network/"],
+        chainId: "0x19",
+        chainName: "Evmos",
+        rpcUrls: ["https://cronos-rpc.heavenswail.one/ext/bc/C/rpc"],
+        blockExplorerUrls: ["https://cronoscan.com/"],
         nativeCurrency: {
-          name: "AVAX",
-          symbol: "AVAX",
+          name: "CRO",
+          symbol: "CRO",
           decimals: 18,
         },
       },
