@@ -13,7 +13,7 @@ export const WhitelistTier = () => {
         props.balance = `Tier ${formatNumber(presale.wlTier, 0)}`;
     } else props.isLoading = true;
 
-    return <DataRow { ...props } />;
+    return <DataRow {...props} />;
 };
 
 export const CurrentPayement = () => {
@@ -22,10 +22,10 @@ export const CurrentPayement = () => {
     const props: PropsOf<typeof DataRow> = { title: "Current Payement" };
 
     if (presale.minAllocation) {
-        props.balance = `${formatNumber(presale.currentPayment, 2)} AVAX`;
+        props.balance = `${formatNumber(presale.currentPayment, 2)} CRO`;
     } else props.isLoading = true;
 
-    return <DataRow { ...props } />;
+    return <DataRow {...props} />;
 };
 
 
@@ -35,10 +35,10 @@ export const MinimumAllocation = () => {
     const props: PropsOf<typeof DataRow> = { title: "Minimum allocation" };
 
     if (presale.minAllocation) {
-        props.balance = `${formatNumber(presale.minAllocation, 1)} AVAX`;
+        props.balance = `${formatNumber(presale.minAllocation, 1)} CRO`;
     } else props.isLoading = true;
 
-    return <DataRow { ...props } />;
+    return <DataRow {...props} />;
 };
 
 export const MaximumAllocation = () => {
@@ -47,9 +47,9 @@ export const MaximumAllocation = () => {
     const props: PropsOf<typeof DataRow> = { title: "Maximum allocation" };
 
     if (presale.maxAllocation) {
-        props.balance = `${formatNumber(presale.maxAllocation, 1)} AVAX`;
+        props.balance = `${formatNumber(presale.maxAllocation, 1)} CRO`;
     } else props.isLoading = true;
 
-    return <DataRow { ...props } />;
+    return <DataRow {...props} />;
 };
 

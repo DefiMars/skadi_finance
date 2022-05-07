@@ -27,7 +27,7 @@ export const PresalePayement: React.FC<AbstractedMetricProps> = props => {
     ...props,
     label: "Current Payement",
   };
-  if (presalePayement) _props.metric = `${presalePayement} AVAX`;
+  if (presalePayement) _props.metric = `${presalePayement} CRO`;
   else _props.isLoading = true;
 
   return <Metric {...props} />;
