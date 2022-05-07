@@ -53,9 +53,7 @@ export const trim = (number: number = 0, precision?: number) => {
 };
 
 export const isTestnet = (networkId: NetworkId) => {
-  const testnets = [
-    NetworkId.AVALANCHE_TESTNET,
-  ];
+  const testnets : any = [];
 
   return testnets.includes(networkId);
 };

@@ -123,7 +123,7 @@ export function Wallet(props: { open?: boolean; component?: string }) {
 
   const WrongNetwork = () => (
     <Box display="flex" justifyContent="center" mt={"32px"}>
-      <Typography variant={"h6"}> Please switch to Avalanche Network </Typography>
+      <Typography variant={"h6"}> Please switch to Cronos Network </Typography>
     </Box>
   );
 

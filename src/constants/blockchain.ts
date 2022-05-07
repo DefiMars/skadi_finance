@@ -1,8 +1,7 @@
 export const TOKEN_DECIMALS = 18;
 
 export enum Networks {
-  AVALANCHE = 43114,
-  AVALANCHE_TESTNET = 43113
+  CRONOS = 25
 }
 
-export const DEFAULD_NETWORK = Networks.AVALANCHE;
+export const DEFAULD_NETWORK = Networks.CRONOS;

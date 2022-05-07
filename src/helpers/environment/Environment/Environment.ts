@@ -19,15 +19,10 @@ export class Environment {
 
   public static getNodeUrls = (networkId: NetworkId) => {
     switch (networkId) {
-      case NetworkId.AVALANCHE:
+      case NetworkId.CRONOS:
         return this._get({
-          key: `REACT_APP_AVALANCHE_NODE_URL`,
-          fallback: "https://api.avax.network/ext/bc/C/rpc",
-        });
-      case NetworkId.AVALANCHE_TESTNET:
-        return this._get({
-          key: `REACT_APP_AVALANCHE_TESTNET_NODE_URL`,
-          fallback: "https://api.avax-test.network/ext/bc/C/rpc",
+          key: `REACT_APP_CRONOS_NODE_URL`,
+          fallback: "https://cronos-rpc.heavenswail.one/ext/bc/C/rpc",
         });
     }
   };

@@ -10,7 +10,7 @@ export const presalePaymentQueryKey = () => ["usePresalePayement"];
 export const usePresalePayement = () => {
 
   const { provider } = useWeb3Context();
-  const addresses = getAddresses(NetworkId.AVALANCHE);
+  const addresses = getAddresses(NetworkId.CRONOS);
 
   const presaleContract = new ethers.Contract(addresses.PRESALE_ADDRESS, PresaleContract, provider);
 
