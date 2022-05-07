@@ -1,0 +1,13 @@
+diff --git a/node_modules/@olympusdao/component-library/lib/components/Metric/Metric.d.ts b/node_modules/@olympusdao/component-library/lib/components/Metric/Metric.d.ts
+index 54d0d97..1c3e9f6 100644
+--- a/node_modules/@olympusdao/component-library/lib/components/Metric/Metric.d.ts
++++ b/node_modules/@olympusdao/component-library/lib/components/Metric/Metric.d.ts
+@@ -4,7 +4,7 @@ import { FC } from "react";
+ export interface OHMMetricProps {
+     className?: string;
+     label?: string;
+-    metric?: string;
++    metric?: any;
+     isLoading?: boolean;
+     labelVariant?: TypographyTypeMap["props"]["variant"];
+     metricVariant?: TypographyTypeMap["props"]["variant"];
