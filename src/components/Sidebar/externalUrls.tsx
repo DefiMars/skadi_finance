@@ -14,7 +14,7 @@ const externalUrls: ExternalUrl[] = [
   // },
   {
     title: "Docs",
-    url: "https://docs.skadi.finance/",
+    url: "https://mayflowerfinance.gitbook.io/mayflower-finance1/",
     icon: "docs",
   },
 ];
