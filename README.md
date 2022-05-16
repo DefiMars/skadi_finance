@@ -12,6 +12,8 @@ This is the front-end repo for Olympus that allows users to be part of the futur
 
 We are moving at web3 speed and we are looking for talented contributors to boost this rocket. Take a look at our [CONTRIBUTING GUIDE](CONTRIBUTING.md) if you are considering joining a world class DAO.
 
+Fork from Olympus Dao
+
 ## 🔧 Setting up Local Development
 
 Required:
